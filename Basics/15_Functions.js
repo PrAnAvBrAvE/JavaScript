@@ -81,15 +81,18 @@ function handleObject(anyobject) // here we pass the object in a function and us
    // price: 399
 // }) // here we simply pass the values as a arguments in a function.
 
-const myNewArray = [200, 400, 100, 600] // here we create a array.
+// const myNewArray = [200, 400, 100, 600] // here we create a array.
 
-function returnSecondValue(myNewArray) // here we pass a array in a function and use it in a function
-// as a parameter.
+function returnSecondValue(getArray) // here we pass a array in a function and use it in a function
+// as a parameter. Here we can give any name to parameter. 
 {
-    return myNewArray[1] // here we simply print the value of an array from basis of index.
+    return getArray[1] // here we simply print the value of an array from basis of index. Here we
+    // have to return function definition parameter not declared array. We have to focus only on
+    // function definition parameter not on declared array.
 }
 
-console.log(returnSecondValue(myNewArray)); // here we simply print the index value of array which
-// we declare above.
-// console.log(returnSecondValue([200, 400, 500, 1000])); // here we simply assign the values to a 
-// function in array format.
+// console.log(returnSecondValue(myNewArray)); // here we simply print the index value of an array 
+// which we declare above in function.
+
+console.log(returnSecondValue([200, 400, 500, 1000])); // here we simply assign the values to a 
+// function in an array format and print the index value of an array which we give in a function.
