@@ -65,8 +65,8 @@ function addone(num) // here, It is a basic function.
 //***************To avoid this there is a method called hoisting in js is used**************. 
 
 const addTwo = function(num) // here, it is also a function but in js sometimes it is also called 
-// as expression. In js it is like a variable. Variable in js are powerful, they can hold any kind
-// of value like json values, function values, etc.
+// as an expression. In js it is like a variable. Variable in js are powerful, they can hold any 
+// kind of value like json values, function values, etc.
 {
     return num + 2
 }
