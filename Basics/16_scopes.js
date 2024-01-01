@@ -58,15 +58,15 @@ function addone(num) // here, It is a basic function.
     return num + 1
 } 
 
-// addTwo(5) // here it will give error because here we print the value of function which is 
+// addTwo(5) // here it will give error because here we call the value of function which is 
 // declared below, in which function definition is hold in a variable and then that variable return
-// the value of function. 
-
-//***************To avoid this there is a method called hoisting in js is used**************. 
+// the value of function.  
 
 const addTwo = function(num) // here, it is also a function but in js sometimes it is also called 
-// as an expression. In js it is like a variable. Variable in js are powerful, they can hold any 
-// kind of value like json values, function values, etc.
+// as an expression. In js it is like a variable. Here addtwo is a variable. Variable in js are  
+// powerful, they can hold any kind of value like json values, function values, etc.
 {
     return num + 2
 }
+
+//*****To avoid above expression problem this there is a method called hoisting in js is used*****.
