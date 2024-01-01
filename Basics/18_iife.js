@@ -14,4 +14,4 @@
 {
     // Simple/Unnamed IIFE
     console.log(`DB CONNECTED TWO ${name}`);
-})('Pranav') // here we declare a function in format of array function.
+})('Pranav') // here we declare a function in format of arrow function.
