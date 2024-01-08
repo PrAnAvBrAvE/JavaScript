@@ -3,10 +3,10 @@
 // ["", "", ""]
 // [{}, {}, {}]
 
-const arr = [1, 2, 3, 4, 5] // here we created an array.
+const arr = [1, 2, 3, 4, 5] // here we created an array. for of loop is best suitable for arrays.
 for (const num of arr) // here we use for of loop.
 {
-    // console.log(num); // here we simply print the value of array.
+    // console.log(num); // here we simply print the value of array. It print the value of arrays.
 }
 
 const greetings = 'Hello' // here we created an string.
