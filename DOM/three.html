@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "pranav"
+    div.id = "divid" // Math.round(Math.random() * 10 + 1) // <- this is used to generate random id.
+    div.setAttribute("title", "Patil")
+    div.style.backgroundColor = "orange"
+    div.style.padding = "20px"
+    div.style.fontSize = "20px"
+    // div.innerText = "Hello Pranav!" // this is first method to addtext to html.
+    const addText = document.createTextNode("Hello Pranav!") // this is the second method to addtext to html.
+    div.appendChild(addText)
+    document.body.appendChild(div)
+</script>
+</html>
