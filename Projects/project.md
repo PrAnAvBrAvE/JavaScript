@@ -8,7 +8,6 @@
 ## project 1
 
 ```javascript
-console.log("pranav")
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
