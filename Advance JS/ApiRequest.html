@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h1>Hello Everyone</h1>
+</body>
+<script>
+
+    const data = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest() // it is nothing but a method. We can also call it as a class.
+    // To create a object of it we simply use new keyword.
+    xhr.open('GET', data) // here we just open the request of api.
+    xhr.onreadystatechange = function(){ // onreadystatechange track request/state of api 
+        // continuously through out the process. It takes a function.
+        console.log(xhr.readyState) // it track the request/state of api once  
+        if(xhr.readyState === 4) // here we use if statement to detect the state of api
+        {
+            const data = JSON.parse(this.responseText)
+            // console.log(typeof data)
+            console.log(data.avatar_url)
+            console.log(data.followers)
+
+            // console.log(this.responseText)
+
+        } // here, whenever continuously readystate changes then always function get executes, hence
+        // it is called as asynchronous programming.
+    }
+    xhr.send() // here we send the request of api
+</script>
+</html>
