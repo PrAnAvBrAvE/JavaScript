@@ -58,10 +58,9 @@ promisefour
 .then(function(user){
     console.log(user.username);
 })
-.then(function(username){ // here the value came as is called as chaining. The value which came 
-    // from above .then method. The above .then return the value username so we pass the username  
-    // in function
-    //console.log(username);
+.then(function(sujay){ // here the value came as is called as chaining. The value which came 
+    // from above .then method. We can name anything to that value. It doesn't matter.
+    console.log(sujay);
 }) // it is called as thennable
 .catch(function(hello){ // here we can name value as anything we like so we name it as error. 
     console.log(hello);
@@ -137,8 +136,9 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 .then(function(response){
     return response.json() // here we parse the data which is in string and simply return it.
 })
-.then(function(data)
+.then(function(hello) // it handles the data of response. Here we can give any name to variable/
+    // value.
 {
-    console.log(data);
+    console.log(hello); 
 })
-.catch(function(error) {console.log(error);})
+.catch(function(error) {console.log(error);}) // it handles the error
