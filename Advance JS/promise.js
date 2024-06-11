@@ -55,14 +55,16 @@ const promisefour = new Promise(function(resolve, reject){
 })
 
 promisefour
-.then(function(user){
-    console.log(user.username);
+.then(function(user){ // here you can name anything to the variable which is passed in a function.
+    console.log(user.username); // here we simply print the data which we want.
 })
 .then(function(sujay){ // here the value came as is called as chaining. The value which came 
-    // from above .then method. We can name anything to that value. It doesn't matter.
+    // from above .then method. We can name anything to that value. It doesn't matter. It handles
+    // the above data here
     console.log(sujay);
 }) // it is called as thennable
-.catch(function(hello){ // here we can name value as anything we like so we name it as error. 
+.catch(function(hello){ // here we can name value as anything we like so we name it as error. It 
+    // handle the errors. 
     console.log(hello);
 })
 .finally(function () {console.log("Finally is invoked")} ) // it will get call always either promise
@@ -133,7 +135,8 @@ consumePromiseFive()
 // Promise using JSON Response - 2nd Method (.then, .catch)
 
 fetch('https://api.github.com/users/hiteshchoudhary')
-.then(function(response){
+.then(function(response){ // here you can name anything to the variable which is passed in a 
+    // function.
     return response.json() // here we parse the data which is in string and simply return it.
 })
 .then(function(hello) // it handles the data of response. Here we can give any name to variable/
