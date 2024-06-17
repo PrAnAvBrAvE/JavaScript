@@ -51,8 +51,7 @@ const data1 = new User('sangram', 12, 5) // here this overrides the value of dat
 // console.log(data1);
 // console.log(data1.constructor); // here constructor property is nothing but a reference of your 
 // context,data,function,object,etc.
-console.log(data instanceof User);
-console.log(data1 instanceof User); // by using instaceof operator we can check that data or data1 is 
+console.log(data instanceof User); // by using instaceof operator we can check that data or data1 is 
 // different from each other or not.
 
 // new keyword info = 
