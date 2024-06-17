@@ -47,10 +47,12 @@ const data1 = new User('sangram', 12, 5) // here this overrides the value of dat
 // function, object, promise, etc. Also it is referred as constructor function which gives you a new
 // copy or new instance and whatever we do in it is belongs to that only, the original one or others
 // cannot get disturbed.
+
 // console.log(data);
 // console.log(data1);
 // console.log(data1.constructor); // here constructor property is nothing but a reference of your 
 // context,data,function,object,etc.
+
 console.log(data instanceof User); // by using instaceof operator we can check that data or data1 is 
 // different from each other or not.
 
