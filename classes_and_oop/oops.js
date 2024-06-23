@@ -19,8 +19,8 @@ const user = {
 
 // constructor function woking = It allows user to create multiple instances from one object. 
 
-// const Promiseone = new Promise() // here basically the new keyword is a constructor function. In JS
-// the new keyword helps us to create a new context which is called as constructor function.
+// const Promiseone = new Promise() // here basically the new keyword is a constructor function. In
+// JS the new keyword helps us to create a new context which is called as constructor function.
 // const date = new date() 
 
 // How do these constructor functions work?
@@ -42,8 +42,8 @@ function User(username, logincount, isloggedin)
 }
 
 const data = new User('pranav', 10, 2)
-const data1 = new User('sangram', 12, 5) // here this overrides the value of data even though it is not
-// printed. So, to avoid it we use new keyword which everytime creates a new context for each 
+const data1 = new User('sangram', 12, 5) // here this overrides the value of data even though it is 
+// not printed. So, to avoid it we use new keyword which everytime creates a new context for each 
 // function, object, promise, etc. Also it is referred as constructor function which gives you a new
 // copy or new instance and whatever we do in it is belongs to that only, the original one or others
 // cannot get disturbed.
