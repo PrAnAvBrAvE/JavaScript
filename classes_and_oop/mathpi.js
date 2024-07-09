@@ -28,13 +28,16 @@ Object.defineProperty(chai, 'email', {
     enumerable: false,
 }) 
 
-// here if we don't want enumeration and make it false then we cannot use loop on object.
+// here if we don't want enumeration for particular value and make it false then we cannot use 
+// loop on property as well as we cannot iterate through that property. But if we want enumeration
+// for particular value and make it true then we can iterate through that property and can make 
+// value availabel on that loop.
 console.log(Object.getOwnPropertyDescriptor(chai, 'email' ));
 
 // for (let [key, value]  of chai) {
 //     console.log(`${key} : ${value}`);
-// } // it will give error as chai is not iteratable because chai is an object. So to iterate over an
-// object we use following property.
+// } // it will give error as chai is not iteratable because chai is an object. So to iterate over 
+// an object we use following property.
 
 // to iterate over object we use following property
 for (let [key, value] of Object.entries(chai)) {
