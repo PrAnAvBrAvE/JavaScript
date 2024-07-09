@@ -28,7 +28,7 @@ Object.defineProperty(chai, 'email', {
     enumerable: false,
 }) 
 
-// here if we don't want enumeration then we cannot use loop on object.
+// here if we don't want enumeration and make it false then we cannot use loop on object.
 console.log(Object.getOwnPropertyDescriptor(chai, 'email' ));
 
 // for (let [key, value]  of chai) {
