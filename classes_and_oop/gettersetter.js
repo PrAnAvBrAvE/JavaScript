@@ -2,6 +2,8 @@
 // properties. By using setter we store original value in database but when anyone want that value
 // then by using getter we can give another value to user where they can work on another value 
 // without changing the original value. 
+
+// It is new syntax
  
 class User {
 
